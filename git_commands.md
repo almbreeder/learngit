@@ -5,9 +5,14 @@ git config --global user.email "xxx"
 
 **使用utf-8 Rom写文件**
 
+添加文件
 git add filename
 git add filename1
+提交更改
 git commit -m "description"
+
+查看状态
+git status
 
 查看提交记录
 git log 
