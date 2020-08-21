@@ -61,3 +61,8 @@ git push -u origin master
 ```bash
 $ git push origin master
 ```
+### 代码合并
+![](./imgs/mistake8_21_1.PNG)
+```bash
+git pull --rebase origin master
+```
