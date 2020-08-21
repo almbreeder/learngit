@@ -21,3 +21,11 @@ x = torch.tensor(train).to(torch.int64)
 RuntimeError: Expected object of scalar type Long but got scalar type Int for argument #2 ‘target‘ in call to _thnn_nll_loss_forward.
 [解决方法](https://blog.csdn.net/wu_xin1/article/details/107990521)
 将第二个位置的输入强制转换成torch.long格式
+
+C:/software/pycharm/projects/GP-GNN-master/train.py:183: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  Variable(torch.from_numpy(entity_markers.astype(int)), volatile=True).cuda(),
+```python
+with torch.no_grad:
+    xxx
+    xxx
+```
