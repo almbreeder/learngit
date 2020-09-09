@@ -61,6 +61,9 @@ git push -u origin master
 ```bash
 $ git push origin master
 ```
+### 删除远程连接
+git remote rm origin
+
 ### 代码合并
 ![](./imgs/mistake8_21_1.PNG)
 ```bash
