@@ -69,3 +69,20 @@ git remote rm origin
 ```bash
 git pull --rebase origin master
 ```
+
+### 删除远程库中的文件夹（不删除本地文件）
+```bash
+git pull origin master
+git rm -r --cached <target>
+git commit -m 'delete target'
+git push origin master
+```
+
+### 删除历史版本
+```bash
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch web/email/app.py" --prune-empty --tag-name-filter cat -- --all
+
+git push origin --force --all
+git push origin --force --tags
+```
+[github链接](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
